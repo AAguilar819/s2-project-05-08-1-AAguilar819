@@ -11,7 +11,25 @@
 
 /* VideoPlayer Styles */
 
-
-
+video{
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+}
+/*This makes the element displayed as a block element, shrinks it a bit, and centers it.*/
+@media screen and (min-width: 521px) {
+video{
+  width: 360px;
+  float: right;
+  margin: 5px;
+}
+/*This makes the video smaller and in-line for screen devices that fit this media query.*/
+}
 
 /* Track Styles */
+::cue {
+  font: 1.3em sans-serif;
+  color: rgb(221, 128, 160);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*This styles the captions.*/
